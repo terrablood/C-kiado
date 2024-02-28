@@ -1,0 +1,18 @@
+CREATE DATABASE kiado
+
+CREATE TABLE regeny
+(
+    id              INT unsigned NOT NULL,
+    kategoria       VARCHAR(150) NOT NULL,
+    magyar          VARCHAR(150) NOT NULL,
+    angol           VARCHAR(150) NOT NULL,
+    ev              INT unsigned NOT NULL,
+    ar              INT unsigned NOT NULL
+);
+
+CREATE TABLE rendeles
+(
+    datum           VARCHAR(150) NOT NULL,
+    regenyid        INT unsigned NOT NULL,
+    darab           INT unsigned NOT NULL
+);
